@@ -6,7 +6,9 @@
 
 4. use the command "git status" to check the result
 
-5. use the command "git diff filename" to check the difference between the file add status with now.
+5. use the command "git diff filename" to check the difference between the file last commit status with now.
 
+6. use the command "git add filename" to add the modified file
 
+7. then use the command "git commit -m "add the git add commit again command, and add the git diff, git status command" "
 
