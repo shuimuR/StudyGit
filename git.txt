@@ -2,5 +2,11 @@
 
 2. then use "git add git.txt" to add file, if there are a lot of files, you can use "git add -A" to add all files
 
+3. then use the command "git commit -m "add some description" " to put the file into the repository, and add the description to the file
+
+4. use the command "git status" to check the result
+
+5. use the command "git diff filename" to check the difference between the file add status with now.
+
 
 
