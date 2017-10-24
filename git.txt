@@ -6,9 +6,19 @@
 
 4. use the command "git status" to check the result
 
-5. use the command "git diff filename" to check the difference between the file last commit status with now.
+5. use the command "git diff filename" to check the difference between the file last add status with now.
 
 6. use the command "git add filename" to add the modified file
 
 7. then use the command "git commit -m "add the git add commit again command, and add the git diff, git status command" "
+
+8. the commit command commit the add file status, if you modify the file after you exec the git add command, after you commit the file, you will lose these modification.
+
+9. use "git log" command to get the history
+
+   use the "git log --pretty=oneline" to make the log display beautiful
+   
+10.在Git中，用HEAD表示当前版本，也就是最新的提交3628164...882e1e0（注意我的提交ID和你的肯定不一样），上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
+	
+	
 
