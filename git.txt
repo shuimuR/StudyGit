@@ -1,0 +1,6 @@
+1. First, come into an empty folder, enter the command "git init" to init the folder, then you will find the ".git" folder
+
+2. then use "git add git.txt" to add file, if there are a lot of files, you can use "git add -A" to add all files
+
+
+
