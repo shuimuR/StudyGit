@@ -61,6 +61,7 @@
 	将分支dev与master合并   git merge dev
 	删除合并后的分支   git branch -d dev
 	
+18. 合并分支时解决冲突
 	
 	
 	
