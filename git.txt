@@ -62,7 +62,31 @@
 	删除合并后的分支   git branch -d dev
 	
 18. 合并分支时解决冲突
+	在解决冲突后重新提交
+	git log --graph --pretty=oneline --abbrev-commit   使用此命令查看分支合并图
 	
+19. 首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+	那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
+
+	你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
 	
+	在合并分支时，强制禁用“Fast forward”模式，在merge时进行提交
+	git merge --no-ff -m "merge with no-ff" dev
+	
+20. 在修复bug时，当前工作未完成，使用git stach将当前工作现场保存起来
+	当前在dev分支上
+	git stash			//保存当前工作区
+	git checkout master		//切换到master分支
+	git checkout -b issue		//创建分支
+	修复bug
+	git add -A
+	git commit -m "fix the issue"
+	git checkout master
+	git merge --no-off -m "fix the issue"
+	git checkout dev
+	git stash pop		//即可恢复之前的工作区
+	
+	中间可以使用git stash list查看保存的工作现场
+	多次保存现场，可以在以上命令运行之后，使用命令git stash apply stash@{0}恢复存储区
 	
 
