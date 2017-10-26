@@ -38,7 +38,23 @@
 13. git删除文件
 	命令"git rm filename"删除git 暂存区的file
 	命令"git commit -m "即可提交
-	如果删除文件后后悔了，可以使用命令"git checkout -- filename"来返回到未删除状态
+	如果删除文件后后悔了，可以使用命令"git checkout "来返回到未删除状态
+	
+14. 创建SSH key
+	ssh-keygen -t rsa -C "youremail@example.com"
+	将以上生成的SSH pub key中的内容复制后加入到GitHub网站中的设置中
+	
+15. 将本地仓推送到github上
+	git remote add orign git@github.com:shuimuR/StudyGit.git
+	git push -u origin master
+	由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。
+	
+	以后，本地做出修改之后，就可以使用命令git push origin master将其推送到github
+
+16. 将github上的仓克隆到本地
+	新建文件夹之后，使用命令"git clone git@github.com:shuimuR/StudyGit.git"进行克隆
+	
+17. 
 	
 	
 
