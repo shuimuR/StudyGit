@@ -54,7 +54,11 @@
 16. 将github上的仓克隆到本地
 	新建文件夹之后，使用命令"git clone git@github.com:shuimuR/StudyGit.git"进行克隆
 	
-17. 
+17. 创建分支
+	git checkout -b dev				//创建dev分支
+	使用git branch命令查看当前分支
+	
+	
 	
 	
 
