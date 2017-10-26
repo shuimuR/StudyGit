@@ -57,6 +57,9 @@
 17. 创建分支
 	git checkout -b dev				//创建dev分支
 	使用git branch命令查看当前分支
+	从分支切换到主线  git checkout master
+	将分支dev与master合并   git merge dev
+	删除合并后的分支   git branch -d dev
 	
 	
 	
