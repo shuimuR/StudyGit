@@ -116,6 +116,11 @@
 	如果标签已经推送到服务器，需要删除
 		1. 本地删除标签   git tag -d <tag name>
 		2. 删除远程标签   git push orign :refs/tags/<tag name>
+		
+24. 设置
+	使用缩略词co代替commit git config --global alias.co checkout
+	配置文件  cat .git/config
+	
 	
 	
 	
