@@ -89,4 +89,15 @@
 	中间可以使用git stash list查看保存的工作现场
 	多次保存现场，可以在以上命令运行之后，使用命令git stash apply stash@{0}恢复存储区
 	
+21. 一般新的功能开发时都要新建分支，在开发分支dev的基础上新建。
+	如果未合并需要删除，要用命令
+	git branch -D branchname
+	在新的branch上，修改过后要执行add和commit命令
+	
+22. git remote   //查看远程库信息
+	git remote -v  		//详细查看远程库信息
+	git push orign master			//向远程仓推送master分支
+	git push orign dev				//向远程仓推送dev分支
+	
+	
 
