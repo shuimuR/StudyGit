@@ -98,6 +98,26 @@
 	git remote -v  		//详细查看远程库信息
 	git push orign master			//向远程仓推送master分支
 	git push orign dev				//向远程仓推送dev分支
+	想要远程推送本地分支，可以在本地建立分支之后，使用git push orign dev, 即可推送dev分支到远程服务器上。
+	如果推送失败，是因为别人修改内容与本地有冲突，要用git pull 命令将其最新内容从服务器下载到本地与本地合并，解决冲突再推送
+	在分支推送时，如果git pull也失败，是因为本地分支与远程分支orign/dev没有链接，使用以下命令
+	git branch --set-upstream dev orign/dev
+	
+23. 标签
+	git tag  查看所有标签
+	git tag V1.0将当前提交的状态打上标签
+	如果打之前提交的标签，首先用命令git log --pretty=oneline --abbrev-commit查看历史提交
+	然后使用git tag <tag> <commit ID>为其打上标签
+	查看某一标签内容，使用git show <tag>
+	创建带有标签说明的标签  git tag -a V0.1 -m "version 0.1 released" <commit ID>
+	删除标签   git tag -d <tag name>
+	推送某个标签到服务器   git push orign <tag name>
+	推送全部标签		git push orign --tags
+	如果标签已经推送到服务器，需要删除
+		1. 本地删除标签   git tag -d <tag name>
+		2. 删除远程标签   git push orign :refs/tags/<tag name>
+	
+	
 	
 	
 
