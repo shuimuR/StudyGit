@@ -40,9 +40,12 @@
 	命令"git commit -m "即可提交
 	如果删除文件后后悔了，可以使用命令"git checkout "来返回到未删除状态
 	
-14. 创建SSH key
+14. 配置邮箱和用户名创建SSH key
+	git config --global user.name "John Doe"
+	git config --global user.email johndoe@example.com
 	ssh-keygen -t rsa -C "youremail@example.com"
 	将以上生成的SSH pub key中的内容复制后加入到GitHub网站中的设置中
+	git config --global 
 	
 15. 将本地仓推送到github上
 	git remote add orign git@github.com:shuimuR/StudyGit.git
